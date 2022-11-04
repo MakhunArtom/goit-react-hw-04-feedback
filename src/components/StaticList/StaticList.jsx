@@ -1,7 +1,6 @@
 import css from './StaticsList.module.css';
 
-const StaticsList = ({ option, feedbackProcent }) => {
-  const { bad, good, neutral, total } = option;
+const StaticsList = ({ bad, good, neutral, total, feedbackProcent }) => {
   return (
     <ul className="statics__list">
       <li className={css.statics__item}>Good: {good} </li>
@@ -9,7 +8,7 @@ const StaticsList = ({ option, feedbackProcent }) => {
       <li className={css.statics__item}>Bad: {bad} </li>
       <li className={css.statics__item}>Total: {total} </li>
       <li className={css.statics__item}>
-        Positive Feedback: {feedbackProcent()}%
+        Positive Feedback: {feedbackProcent(total)}%
       </li>
     </ul>
   );

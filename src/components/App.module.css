@@ -7,19 +7,3 @@
 
     border: 2px solid black;
 }
-
-.widget__control {
-    margin-bottom: 20px;
-
-}
-
-.control__title {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-
-.statics__title {
-    text-align: center;
-    margin-bottom: 10px;
-}
